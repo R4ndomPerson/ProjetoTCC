@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/Style.css" type="text/css">
-    <title>Contatos</title>
+
+
+    <title>mensagem</title>
 </head>
+
 <body>
 
-   <ul style="height: 80px; margin-top: 35px;">
-      <li><input style="height: 15px; width: 15px; margin-left: 5px;" type="radio">Selecionar Todos</input></li>
-         <div class="campodebutoes">
-           <li><button style="color: black; border: none;">Lido</button></li>
-           <li><button style="color: black; border: none;">Fixado</button></li>
-           <li><button style="color: rgb(255, 255, 255); background-color: red; border: solid rgb(255, 255, 255);">Deletar</button></li>
-         </div>
-   </ul>
 
-     <div class="contatos">
-        <button class="testecontato"><img>Teste</button>
-        <button class="testecontato"><img>Teste</button>
-     </div>
+    <ul style="height: 80px; margin-top: 35px;">
+        <li><input style="height: 15px; width: 15px; margin-left: 5px;" type="radio">Selecionar Todos</input></li>
+        <div class="campodebutoes">
+            <li><button style="color: black; border: none;">Lido</button></li>
+            <li><button style="color: black; border: none;">Fixado</button></li>
+            <li><button
+                    style="color: rgb(255, 255, 255); background-color: red; border: solid rgb(255, 255, 255);">Deletar</button>
+            </li>
+        </div>
+    </ul>
 
+
+
+    <div style="margin: 20px 0;">
+    <button id="btnNovaMensagem">Nova Mensagem</button>
+</div>
+
+<div id="modalMensagem" style="display:none; position:fixed; top:30%; left:50%; transform:translate(-50%,-30%); background:#fff; border:1px solid #ccc; padding:20px; z-index:1000;">
+    <input type="text" id="nomeContato" placeholder="Nome do contato" style="display:block; margin-bottom:10px;">
+    <textarea id="textoMensagem" placeholder="Digite sua mensagem" style="display:block; width:100%; height:60px; margin-bottom:10px;"></textarea>
+    <button id="btnEnviarMensagem">Enviar</button>
+    <button id="btnFecharModal">Fechar</button>
+</div>
+
+<div class="contatos"></div>
+
+
+<script src="./js/mensagens.js"></script>
 </body>
+
 </html>
