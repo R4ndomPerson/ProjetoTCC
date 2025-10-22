@@ -6,10 +6,6 @@
 
       /*Página Inicial*/
 
-  .borda {
-      background-color: white;
-      height: 190px;
-  }
   ul {
       list-style-type: none;
       margin-bottom: 5px;
@@ -393,7 +389,7 @@
           width: 100px;
     }
     .logindiv2 {
-      height: 590px;
+      height: 680px;
       width: 330px;
       background-color: white;
       flex-direction: column;
@@ -465,8 +461,8 @@
       flex-direction: row;
     }
     .fotoicone {
-      height: 30px;
-      width: 30px;
+      height: 150px;
+      width: 150px;
       float: left;
       margin-right: 180px;
     }
@@ -476,4 +472,3 @@
       align-items: center;
     }
   }
-
